@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>SSPART</title>
+<link href="SSPART_files/sspart.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://localhost/SSPART/_images/ssp001_logo.ico">
+</head>
+
+<body>
+
+<div id="container">
+<form method="post" action="index.php" id="menu">
+	<div id="menubtn">
+    <img src="SSPART_files/threelinenavicon0.png" title="Menu" alt="" onclick="closemenuDropDown()">
+    </div>
+	<input name="menutextfild" type="text" id="menutextfild" placeholder="Enter Search Topic Here">
+	<input type="submit" id="menusearchbtn" value="Find">
+</form>
+<div id="videocontainer">
+	<video autoplay="autoplay" controls="controls" id="videoElement">
+	<source src="SSPART_files/skSumple1.mp4">
+	</video>
+	<div id="videomenu2">
+	<div id="vidbtn0" onclick="ssp001playBackMedia()">
+	-Back
+	</div>
+	<div id="vidbtn0" onclick="ssp001playNextMedia()">
+	Next+
+	</div>
+	<div id="vidbtn1">
+	More
+	</div>
+	<div id="vidbtn1">
+	Settings
+	</div>
+	</div>
+</div>
+<div id="videoplaylist">
+<div id="playlistitem">
+	<img src="SSPART_files/SSP%2520skwis%2520Anim%2520sspart.png" alt="" width="72" height="72">
+	<a href="javascript:void(0);" title="_videos/skSumple1.mp4" onclick="playvidNoSpaces(this.title)">
+	skSumple1</a>
+	</div></div>
+<div id="clearor"></div>
+</div>
+
+
+
+
+<script>
+ var video = document.querySelector("#videoElement");
+ 
+function stringReplaceAllspaces(Sourcez) {
+//string=string.replace(/^s+|s+$/g, '');
+//string=string.replace(/s/g,"%20");
+	var temp = Sourcez
+	var index = temp.indexOf(" ")
+    while (index != -1) {
+        temp = temp.replace(" ", "%20")
+        index = temp.indexOf(" ")
+    }
+    return temp
+}
+	
+function playvidNoSpaces(thevid){
+viddeourl=stringReplaceAllspaces(thevid)
+video.src = viddeourl;
+video.play;
+}
+	
+	Anaeeay = document.querySelectorAll("#playlistitem a");
+	var home_video = new Array();
+   for (var i=0; i<=(Anaeeay.length-1); i++)
+   {
+	  home_video[i]=Anaeeay[i].title;
+   }
+	
+   var counttracks=0;  
+function ssp001playNextMedia(){
+	if(counttracks<(Anaeeay.length-1))
+		{
+		counttracks++;
+		}
+	else{
+		counttracks=0;
+		}
+	var vidsspxxx=home_video[counttracks];
+	playvidNoSpaces(vidsspxxx);
+} 
+function ssp001playBackMedia(){
+	if(counttracks<0)
+		{
+		counttracks=(Anaeeay.length-1);
+		}
+	else{
+		counttracks--;
+		}
+	var vidsspxxx=home_video[counttracks];
+	playvidNoSpaces(vidsspxxx);
+}
+	
+	video.addEventListener('ended', function() {
+	this.pause()
+	ssp001playNextMedia()
+	}, false);
+</script>
+	
+						
+<div id="menuDropDownbg" class="mymenussp0" onclick="closemenuDropDown()">			
+</div>
+<div id="menuDropDown" class="mymenussp0">
+<a href="#" id="playlistitem">About</a>						
+<a href="#" id="playlistitem" onclick="closemenuDropDown()">Videos</a>
+<a href="http://localhost/SSPART/ZipDownloader.php" id="playlistitem">Downloads</a>
+<a href="#" id="playlistitem">Contact</a>
+<a href="#" id="playlistitem">Donate</a>					
+</div>
+<script> 
+	function closemenuDropDown(){	
+ 	var menuDropDownz = document.getElementById("menuDropDown");
+ 	var menuDropDownbgi = document.getElementById("menuDropDownbg");
+    if (menuDropDownz.className === "mymenussp0") {
+        menuDropDownz.className = "mymenussp1";
+		menuDropDownbgi.className = "mymenussp1";
+    	} else {
+		menuDropDownz.className = "mymenussp0";
+		menuDropDownbgi.className = "mymenussp0";
+		}
+	}
+</script>
+								
+
+
+</body></html>

@@ -48,8 +48,6 @@ var list = {
 			[ "Todo-list", "manual/SSP001_JS/Todo-list" ],
 			[ "Tool-tips", "manual/SSP001_JS/Tool-tips" ],
 			[ "Toggle Switch", "manual/SSP001_JS/Toggle-Switch" ],
-			[ "Dialog boxes confirm", "manual/SSP001_JS/Dialog-boxes-confirm" ],
-			[ "Dialog boxes", "manual/SSP001_JS/Dialog-boxes-js" ],
 			[ "Snackbar Toast", "manual/SSP001_JS/Snackbar-Toast" ],
 			[ "Progress bar", "manual/SSP001_JS/Progress-bar" ],
 			[ "JS Animation", "manual/SSP001_JS/JS-Animation" ],

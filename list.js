@@ -54,7 +54,6 @@ var list = {
 			[ "Alert Messages", "manual/SSP001JS/Alert-Messages" ],
 			[ "Filter List", "manual/SSP001JS/Filter-List" ],
 			[ "Popup Login", "manual/SSP001JS/Popup-Login" ],
-			[ "Popup Login", "manual/SSP001JS/Popup-Login" ],
 			[ "Loaders1", "manual/SSP001JS/Loaders1" ],
 			[ "Loaders2", "manual/SSP001JS/Loaders2" ],
 			[ "Filter Table", "manual/SSP001JS/Filter-Table" ],
@@ -86,7 +85,6 @@ var list = {
 	},
 	"Other notes": {
 		"Accounting": [
-			[ "Introduction", "manual/SSP001Acc/FINANCIAL-ACCOUNTING" ],
 			[ "Introduction", "manual/SSP001Acc/FINANCIAL-ACCOUNTING" ]
 		]
 	}

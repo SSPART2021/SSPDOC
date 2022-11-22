@@ -10,7 +10,7 @@ var list = {
 			[ "HTML Tables", "manual/SSP001HTML/HTML-Tables" ],
 			[ "Hyper links", "manual/SSP001HTML/Hyperlinks" ],
 			[ "Displaying Images", "manual/SSP001HTML/Displaying-Images" ],
-			[ "Image Mapping and Editing", "manual/SSP001_HTML/Image-Mapping-and-Editing" ],
+			[ "Image Mapping and Editing", "manual/SSP001HTML/Image-Mapping-and-Editing" ],
 			[ "Display HTML code", "manual/SSP001HTML/Display-HTML-code" ],
 			[ "Three line icon code", "manual/SSP001HTML/Three-line-icon-code" ]
 		],

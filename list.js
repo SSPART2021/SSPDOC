@@ -64,7 +64,8 @@ var list = {
 			[ "Alart dialog box", "manual/SSP001JS/Dialog-box-alart" ],
 			[ "Prompt dialog box", "manual/SSP001JS/Dialog-box-prompt" ],
 			[ "Paralax", "manual/SSP001JS/Paralax" ],
-			[ "Drag And Drop", "manual/SSP001JS/Drag-And-Drop" ]
+			[ "Drag And Drop", "manual/SSP001JS/Drag-And-Drop" ],
+			[ "Read xml online", "manual/SSP001JS/Read-xml-online" ]
 		],
 		"Flash Action Script": [
 			[ "Flash Player", "manual/SSP001AS/Flash-Action-Script-Media-Player" ]

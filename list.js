@@ -87,6 +87,9 @@ var list = {
 	"Other notes": {
 		"Accounting": [
 			[ "Introduction", "manual/SSP001Acc/FINANCIAL-ACCOUNTING" ]
+		],
+		"Security": [
+			[ "Security guard notes", "manual/SSP001SECURITY/Security-guard-notes" ]
 		]
 	}
 

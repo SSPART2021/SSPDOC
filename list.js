@@ -1,5 +1,11 @@
 var list = {
 
+	"About": {
+		"Ssentongo Simon Peter": [
+			[ "Who is SSP", "manual/SSP001JS/Who-is-SSP" ],
+			[ "3d using threejs", "manual/SSP001JS/3d-using-threejs" ]
+		]
+		},
 	"WEB SITE": {
 		"HTML": [
 			[ "HTML Introduction", "manual/SSP001HTML/HTML-Introduction" ],
@@ -43,10 +49,10 @@ var list = {
 			[ "Popups", "manual/SSP001JS/Popups" ],
 			[ "Notes", "manual/SSP001JS/Notes" ],
 			[ "PC HTML mp4 Player", "manual/SSP001JS/PC-HTML-mp4-Player" ],
-			[ "Android HTML mp4 Player", "manual/SSP001JS/Android-HTML-mp4-Player" ],
+			[ "SnakeGame", "manual/SSP001JS/Snake-Game" ],
 			[ "Tabs", "manual/SSP001JS/Tabs" ],
-			[ "Todo-list", "manual/SSP001JS/Todo-list" ],
-			[ "Tool-tips", "manual/SSP001JS/Tool-tips" ],
+			[ "Todo list", "manual/SSP001JS/Todo-list" ],
+			[ "Tool tips", "manual/SSP001JS/Tool-tips" ],
 			[ "Toggle Switch", "manual/SSP001JS/Toggle-Switch" ],
 			[ "Snackbar Toast", "manual/SSP001JS/Snackbar-Toast" ],
 			[ "Progress bar", "manual/SSP001JS/Progress-bar" ],
@@ -65,10 +71,17 @@ var list = {
 			[ "Prompt dialog box", "manual/SSP001JS/Dialog-box-prompt" ],
 			[ "Paralax", "manual/SSP001JS/Paralax" ],
 			[ "Drag And Drop", "manual/SSP001JS/Drag-And-Drop" ],
-			[ "Read xml online", "manual/SSP001JS/Read-xml-online" ]
+			[ "Read xml online", "manual/SSP001JS/Read-xml-online" ],
+			[ "Read json online", "manual/SSP001JS/Read-json-online" ],
+			[ "Arrays", "manual/SSP001JS/Arrays" ]
+			
 		],
 		"Flash Action Script": [
 			[ "Flash Player", "manual/SSP001AS/Flash-Action-Script-Media-Player" ]
+		],
+		"Php": [
+			[ "PHP Introduction", "manual/SSP001PHP/PHP-Introduction" ],
+			[ "PHP Examples", "manual/SSP001PHP/PHP-Examples" ]
 		]
 	},
 	"PYTHON": {

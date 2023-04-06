@@ -3,7 +3,10 @@ var list = {
 	"About": {
 		"Ssentongo Simon Peter": [
 			[ "Who is SSP", "manual/SSP001JS/Who-is-SSP" ],
-			[ "3d using threejs", "manual/SSP001JS/3d-using-threejs" ]
+			[ "3d using threejs", "manual/SSP001JS/3d-using-threejs" ],
+			[ "3d using threejs ssp obj", "manual/SSP001JS/3d-using-threejs-ssp-obj"],
+			[ "3d using threejs ssp obj mtl", "manual/SSP001JS/3d-using-threejs-ssp-obj-mtl" ],
+			[ "3d using threejs loader json blender", "manual/SSP001JS/3d-using-threejs-loader-json-blender"]
 		]
 		},
 	"WEB SITE": {

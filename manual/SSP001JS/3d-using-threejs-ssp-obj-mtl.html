@@ -87,7 +87,8 @@
 					objLoader.setPath( '3d/obj/SSP001/' );
 					objLoader.load( 'SSP001.obj', function ( object ) {
 
-						object.position.y = - 55;
+					object.position.y = -10;
+					object.position.z = 150;
 						scene.add( object );
 
 					}, onProgress, onError );

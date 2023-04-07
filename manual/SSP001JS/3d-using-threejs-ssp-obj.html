@@ -7,29 +7,35 @@
 		<style>
 			body {
 				font-family: Monospace;
-				background-color: red;
+				background-color: #000;
 				color: #fff;
 				margin: 0px;
 				overflow: hidden;
 			}
-			.button { color: #f00; font-weight: bold; text-decoration: underline; cursor: pointer }
+			#info {
+				color: #fff;
+				position: absolute;
+				top: 10px;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+			}
+			#info a, .button { color: #f00; font-weight: bold; text-decoration: underline; cursor: pointer }
 		</style>
 	</head>
 
 	<body>
+		<div id="info">
+		SSP
+		</div>
 
 		<script src="./js3d/build/three.min.js"></script>
-
-		<script src="./js3d/js/loaders/DDSLoader.js"></script>
-		<script src="./js3d/js/loaders/MTLLoader.js"></script>
 		<script src="./js3d/js/loaders/OBJLoader.js"></script>
-
-		<script src="./js3d/js/Detector.js"></script>
-		<script src="./js3d/js/libs/stats.min.js"></script>
 
 		<script>
 
-			var container, stats;
+			var container;
 
 			var camera, scene, renderer;
 
@@ -55,14 +61,23 @@
 
 				scene = new THREE.Scene();
 
-				var ambient = new THREE.AmbientLight( 0x444444 );
+				var ambient = new THREE.AmbientLight( 0x101030 );
 				scene.add( ambient );
 
 				var directionalLight = new THREE.DirectionalLight( 0xffeedd );
-				directionalLight.position.set( 0, 0, 1 ).normalize();
+				directionalLight.position.set( 0, 0, 1 );
 				scene.add( directionalLight );
 
-				// model
+				// texture
+
+				var manager = new THREE.LoadingManager();
+				manager.onProgress = function ( item, loaded, total ) {
+
+					console.log( item, loaded, total );
+
+				};
+
+				var texture = new THREE.Texture();
 
 				var onProgress = function ( xhr ) {
 					if ( xhr.lengthComputable ) {
@@ -71,29 +86,38 @@
 					}
 				};
 
-				var onError = function ( xhr ) { };
+				var onError = function ( xhr ) {
+				};
 
-				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 
-				var mtlLoader = new THREE.MTLLoader();
-				mtlLoader.setBaseUrl( './js3d/obj/SSP001/' );
-				mtlLoader.setPath( './js3d/obj/SSP001/' );
-				mtlLoader.load( 'SSP001.mtl', function( materials ) {
+				var loader = new THREE.ImageLoader( manager );
+				loader.load( './js3d/textures/UV_Grid_Sm.jpg', function ( image ) {
 
-					materials.preload();
+					texture.image = image;
+					texture.needsUpdate = true;
 
-					var objLoader = new THREE.OBJLoader();
-					objLoader.setMaterials( materials );
-					objLoader.setPath( './js3d/obj/SSP001/' );
-					objLoader.load( 'SSP001.obj', function ( object ) {
+				} );
+
+				// model
+
+				var loader = new THREE.OBJLoader( manager );
+				loader.load( './js3d/obj/SSP001/SSP001.obj', function ( object ) {
+
+					object.traverse( function ( child ) {
+
+						if ( child instanceof THREE.Mesh ) {
+
+							child.material.map = texture;
+
+						}
+
+					} );
 
 					object.position.y = -10;
 					object.position.z = 150;
-						scene.add( object );
+					scene.add( object );
 
-					}, onProgress, onError );
-
-				});
+				}, onProgress, onError );
 
 				//
 

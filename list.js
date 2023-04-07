@@ -6,7 +6,9 @@ var list = {
 			[ "3d using threejs", "manual/SSP001JS/3d-using-threejs" ],
 			[ "3d using threejs ssp obj", "manual/SSP001JS/3d-using-threejs-ssp-obj"],
 			[ "3d using threejs ssp obj mtl", "manual/SSP001JS/3d-using-threejs-ssp-obj-mtl" ],
-			[ "3d using threejs loader json blender", "manual/SSP001JS/3d-using-threejs-loader-json-blender"]
+			[ "3d using threejs loader json blender", "manual/SSP001JS/3d-using-threejs-loader-json-blender"],
+			[ "3d tour", "manual/SSP001JS/3d-tour"]
+			
 		]
 		},
 	"WEB SITE": {

@@ -3,12 +3,7 @@ var list = {
 	"About": {
 		"Ssentongo Simon Peter": [
 			[ "Who is SSP", "manual/SSP001JS/Who-is-SSP" ],
-			[ "3d using threejs", "manual/SSP001JS/3d-using-threejs" ],
-			[ "3d using threejs ssp obj", "manual/SSP001JS/3d-using-threejs-ssp-obj"],
-			[ "3d using threejs ssp obj mtl", "manual/SSP001JS/3d-using-threejs-ssp-obj-mtl" ],
-			[ "3d using threejs loader json blender", "manual/SSP001JS/3d-using-threejs-loader-json-blender"],
-			[ "3d tour", "manual/SSP001JS/3d-tour"]
-			
+			[ "sspos", "manual/SSPOSF/sspos" ]
 		]
 		},
 	"WEB SITE": {
@@ -78,15 +73,19 @@ var list = {
 			[ "Drag And Drop", "manual/SSP001JS/Drag-And-Drop" ],
 			[ "Read xml online", "manual/SSP001JS/Read-xml-online" ],
 			[ "Read json online", "manual/SSP001JS/Read-json-online" ],
-			[ "Arrays", "manual/SSP001JS/Arrays" ]
-			
+			[ "Arrays", "manual/SSP001JS/Arrays" ],
+			[ "3d using threejs", "manual/SSP001JS/3d-using-threejs" ],
+			[ "3d using threejs ssp obj", "manual/SSP001JS/3d-using-threejs-ssp-obj"],
+			[ "3d using threejs ssp obj mtl", "manual/SSP001JS/3d-using-threejs-ssp-obj-mtl" ],
+			[ "3d using threejs loader json blender", "manual/SSP001JS/3d-using-threejs-loader-json-blender"],
+			[ "3d tour", "manual/SSP001JS/3d-tour"]
+
 		],
 		"Flash Action Script": [
 			[ "Flash Player", "manual/SSP001AS/Flash-Action-Script-Media-Player" ]
 		],
 		"Php": [
-			[ "PHP Introduction", "manual/SSP001PHP/PHP-Introduction" ],
-			[ "PHP Examples", "manual/SSP001PHP/PHP-Examples" ]
+			[ "PHP Introduction", "manual/SSP001PHP/PHP-Introduction" ]
 		]
 	},
 	"PYTHON": {

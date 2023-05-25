@@ -18,7 +18,13 @@ var list = {
 			[ "Displaying Images", "manual/SSP001HTML/Displaying-Images" ],
 			[ "Image Mapping and Editing", "manual/SSP001HTML/Image-Mapping-and-Editing" ],
 			[ "Display HTML code", "manual/SSP001HTML/Display-HTML-code" ],
-			[ "Three line icon code", "manual/SSP001HTML/Three-line-icon-code" ]
+			[ "Three line icon code", "manual/SSP001HTML/Three-line-icon-code" ],
+			[ "HTML Canvas", "manual/SSP001HTML/HTML-Canvas" ],
+			[ "HTML Video", "manual/SSP001HTML/HTML-Video" ]
+
+			
+			
+			
 		],
 		"CSS3": [
 			[ "image blur effect", "manual/SSP001CSS3/image-blur-effect" ],
@@ -48,8 +54,6 @@ var list = {
 			[ "Calculator", "manual/SSP001JS/Calculator" ],
 			[ "Popups", "manual/SSP001JS/Popups" ],
 			[ "Notes", "manual/SSP001JS/Notes" ],
-			[ "PC HTML mp4 Player", "manual/SSP001JS/PC-HTML-mp4-Player" ],
-			[ "SnakeGame", "manual/SSP001JS/Snake-Game" ],
 			[ "Tabs", "manual/SSP001JS/Tabs" ],
 			[ "Todo list", "manual/SSP001JS/Todo-list" ],
 			[ "Tool tips", "manual/SSP001JS/Tool-tips" ],
@@ -68,6 +72,24 @@ var list = {
 			[ "Draw a triangle", "manual/SSP001JS/draw-a-triangle" ],
 			[ "Confirm dialog box", "manual/SSP001JS/Dialog-box-confirm" ],
 			[ "Alart dialog box", "manual/SSP001JS/Dialog-box-alart" ],
+			
+			
+			
+			
+			
+			
+			
+			[ "Canvas Clock", "manual/SSP001JS/Canvas-Clock" ],
+			[ "Canvas Snake Game", "manual/SSP001JS/Canvas-Snake-Game" ],
+			[ "Canvas Game 1", "manual/SSP001JS/Canvas-Game-1" ],
+			[ "Canvas Game 1 keyboad", "manual/SSP001JS/Canvas-Game-1-keyboad" ],
+			
+			[ "Geolocation", "manual/SSP001JS/Geolocation" ],
+			
+			
+			
+			
+			
 			[ "Prompt dialog box", "manual/SSP001JS/Dialog-box-prompt" ],
 			[ "Paralax", "manual/SSP001JS/Paralax" ],
 			[ "Drag And Drop", "manual/SSP001JS/Drag-And-Drop" ],

@@ -83,6 +83,7 @@ var list = {
 			[ "Canvas Snake Game", "manual/SSP001JS/Canvas-Snake-Game" ],
 			[ "Canvas Game 1", "manual/SSP001JS/Canvas-Game-1" ],
 			[ "Canvas Game 1 keyboad", "manual/SSP001JS/Canvas-Game-1-keyboad" ],
+			[ "Game Pad", "manual/SSP001JS/Game-Pad" ],
 			
 			[ "Geolocation", "manual/SSP001JS/Geolocation" ],
 			
